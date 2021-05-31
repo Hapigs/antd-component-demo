@@ -1,28 +1,43 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+      <a-radio-group default-value="a" button-style="solid">
+        <a-radio-button value="a">
+          Hangzhou
+        </a-radio-button>
+        <a-radio-button value="b">
+          Shanghai
+        </a-radio-button>
+        <a-radio-button value="c">
+          Beijing
+        </a-radio-button>
+        <a-radio-button value="d">
+          Chengdu
+        </a-radio-button>
+      </a-radio-group>
+    </div>
+    <div class="nav-bar"></div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    padding: 20px;
+    position: relative;
+  }
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: antiquewhite;
+  }
 </style>
